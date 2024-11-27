@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Ular Tangga</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap" rel="stylesheet"> <!--Sumber : https://fontawesome.com/-->
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="title">Permainan Ular Tangga Sederhana</h1>
+        <canvas id="my_canvas" width="600" height="600"></canvas>
+        
+        <div class="math-controls">
+            <button id="generate-button">Acak Dadu</button>
+            <input type="number" id="num1" min="1" max="6" placeholder="0" value="" disabled>
+            <span>+</span>
+            <input type="number" id="num2" min="1" max="6" placeholder="0" disabled>
+            <span>=</span>
+            <div id="answer-box">?</div> 
+
+        </div>
+        
+        <div class="number-boxes">
+            <div class="drop-box" id="box1">1</div>
+            <div class="drop-box" id="box2">2</div>
+            <div class="drop-box" id="box3">3</div>
+            <div class="drop-box" id="box4">4</div>
+            <div class="drop-box" id="box5">5</div>
+            <div class="drop-box" id="box6">6</div>
+        </div>
+        <div>
+            <button id="start">Start Game</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Sumber : https://sweetalert2.github.io/#usage -->
+    <script type="module" src="index.js"></script>
+    <script type="module" src="matrix.js"></script>
+</body>
+</html>
